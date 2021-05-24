@@ -1,0 +1,108 @@
+/* Se utiliza el * para aplicar el formato a toda la página */
+*
+body {
+	font-family: Verdana, sans-serif; font-size:0.8em;
+
+}
+/* Define características genericas para los párrafos */
+p {
+ font-size: 1.5em;
+ color: #8B9170;
+ text-align: justify;
+}
+/* Define tamaño de los subtítulos*/
+h2{
+  font-size: 1.5em;
+	color: #8B9170;
+	text-align: justify;
+}
+
+/* Define tamaño de los enlaces*/
+a {
+  color: white;
+}
+
+/* Define características genéricas para las clases de las cajas  */
+.clearflix,  .contenido{
+  padding: 2em;
+}
+/* Define color de fondo, color de fuente, tamaño de fuente y margen inferior para header  */
+.clearflix{
+  background-color: black;
+  color:white;
+  margin-bottom:1em;
+  height: 100px;
+  font-size: 1em;
+}
+
+/* Define formato para la clase contenido  */
+.contenido{
+  float: left;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* Define formato para la clase de estructura rejilla */
+.row show-grid{
+  ;
+  height: 100px;
+  margin-bottom: 1em;
+}
+/* Define formato responsive para la clase de estructura rejilla, en este caso los contenidos centrados */
+.col-sm, .col-md, .col-lg{
+	text-align: center;
+}
+/* Define formato para cuadro de título */
+.rounded-0{
+	float: left;
+	background-color: orange;
+	color: green;
+}
+
+/* media que define el cambio de estilo del sitio si no se cumplen los requisitos de tamaño */
+/* Formato para dispositivos pequeños */
+@media (max-width: 768px){
+    body {
+        -webkit-text-size-adjust: none;
+        background: rgb(253, 244, 246);
+    }
+
+		h2 {
+		  font-size: 1em;
+			color: #8B9170;
+			text-align: justify;
+		}
+
+		.rounded-0 {
+			float: left;
+			background-color: orange;
+			color: green;
+		}
+
+    p {
+        font: normal 1em/1.25em "helvetia neue", Helvetia, Arial, Sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    .clearflix{
+      background-color: #CF0000;
+    }
+
+    .contenido{
+      background-color: black;
+      color:white;
+    }
+		.rounded-0{
+			float: left;
+			background-color: black;
+			color: white;
+		}
+
+		.col-sm {
+			text-align: center;
+			width: 100%;
+		}
+
+		.IMG2 {
+			visibility: hidden;
+		}
+}

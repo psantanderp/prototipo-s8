@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <!-- Se define codificación de caracteres-->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <!-- Se establece la etiqueta viewport para indicar la escala del ancho que se debe considerar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0; user-scalable=0;">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- Se define hoja de estilos externa-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <title>Libro de ejercicios</title>
+  </head>
+  <body>
+    <!-- Se estrucura la pagina en forma de cajas, donde la paginación se agrega a una caja header de la clase clearflix-->
+    <header class="clearflix">
+      <!-- Para que la paginación sea funcional, se agregan etiquetas de navegación a las otras paginas del libro -->
+      <!-- Para las entidades que usamos de etiquetas de navegación por los capítulos del libro, usamos las clases float, para izquierda y derecha según corresponda -->
+      <a href="index.html"><span class="float-left">&laquo; Capítulo 1</span></a> <a href="page3.html"><span class="float-right">Capítulo 3 &raquo;</span></a>
+    </header>
+    <!-- Se seccionan los contenidos agrupandolos en una gran caja con las etiquetas section y la clase contenido -->
+    <section class="contenido">
+      <!-- Se utiliza la estructura de rejilla dentro de contenido, para cada caja con sus tipos de columnas -->
+      <article class="row show-grid">
+        <!-- Se indica el tamaño de las columnas con la clase col-lg -->
+        <div class="col-lg">
+          <!-- se agregan elementos para modificar el aspecto del título, donde este es se compone de un cuadro redondeado y de color-->
+            <h1 class="rounded-0">Capítulo dos</h1><br><br>&nbsp;
+            <h2>Este es el contenido del capítulo 2 de este interesante libro</h2>
+            <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit.
+            condimentum justo, ut commodo justo semper in.
+            Suspendisse tincidunt turpis nibh, vel gravida velit consectetur tempus. Aenean
+            placerat, sem eu tristique tempus, ex sem rhoncus lorem,
+            Quisque facilisis, libero sed dapibus suscipit, dolor felis mollis dui, nec luctus odio diam
+            ac nunc. Donec maximus elit non felis mattis,
+            et pharetra nunc dapibus.Cras hendrerit lorem vitae dignissim iaculis. Maecenas
+            ultricies, elit rhoncus dignissim sodales."
+          </p>
+        </div>
+      </article>
+      <!-- Se utiliza la estructura de rejilla dentro de contenido, para cada caja con sus tipos de columnas -->
+      <!-- Se agregan elementos para ocultar la caja completa al cambiar de tamaño, para la clase col-md, junto con la imagen IMG2-->
+      <article class="row show-grid">
+        <div class="col-sm">
+          <img src="imagenes/IMG1.png" alt="Imagen 1" class="img-fluid rounded-circle">
+          <br>
+        </div>
+        <div class="col-md d-none d-md-block">
+          <img src="imagenes/IMG2.png" alt="Imagen 2" class="IMG2 img-fluid rounded-circle">
+          <br>
+        </div>
+      </article>
+      <!-- Se utiliza la estructura de rejilla dentro de contenido, para cada caja con sus tipos de columnas -->
+      <!-- Se utiliza la estructura de formato responsive para el elemento de video -->
+      <article class="col-lg">
+        <br>&nbsp;
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5yhurzk5zME" frameborder="0" allow="accelerometer allowfullscreen"></iframe>
+        </div>
+      </article>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Se agregan las librerias de jQuery que nos sirven para trabajar con los elementos @media en nuestras hojas-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
